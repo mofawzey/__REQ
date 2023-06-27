@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+
+/// Returns Constant
+/// @param {String} $path - image path
+/// @param {String} $base [$base-url] - base URL
+/// @return {Constant}
+/// @require $name
+@function const($name) {
+  @if not map-has-key($CONSTANTS, $name) {
+    @error "Unknow const #{$name}";
+  }
+  @return map-get($map: $CONSTANTS, $key: $name);
+}

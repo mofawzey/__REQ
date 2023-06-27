@@ -1,0 +1,134 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+.v-box-shadow {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+.fill-width {
+  width: 100% !important;
+}
+
+.fill-height {
+  height: 100% !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.gradient {
+  @include gradient();
+  color: white;
+}
+
+.gradient-text {
+  @include gradient(text);
+}
+
+//12px
+.text-caption {
+  font-size: 12px !important;
+  color: #808080 !important;
+  font-size: 0.75rem !important;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.0333333333em !important;
+
+  &-size {
+    font-size: 12px !important;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.0333333333em !important;
+  }
+  &-color {
+    color: #808080 !important;
+  }
+}
+//14px
+.text-semi-caption {
+  font-size: 14px !important;
+  color: #808080 !important;
+
+  &-size {
+    font-size: 14px !important;
+  }
+}
+//20px
+.text-lead {
+  font-size: 1.25rem !important; // 20px
+}
+
+// .btn-primary {
+//   background-color: $primary-color important;
+//   border-color: $primary-color !important;
+//   &:hover,
+//   &:active,
+//   &:visited {
+//     background-color: darken($color: $primary-color, $amount: 10%) !important;
+//     border-color: darken($color: $primary-color, $amount: 10%) !important;
+//   }
+// }
+
+// // .hidden-sm-and-down
+// @each $size, $media_query in $display-breakpoints {
+//   .hidden-#{$size} {
+//     @media #{$media_query} {
+//       display: none !important;
+//     }
+//   }
+// }
+
+// // .text-primary , .primary(bg)
+// @each $colorKey, $colorValue in $colors {
+//   // text-primary
+//   .text-#{$colorKey} {
+//     color: $colorValue !important;
+//     caret-color: $colorValue !important;
+//   }
+
+//   // .primary(bg)
+//   .#{$colorKey} {
+//     background-color: $colorValue !important;
+//     border-color: $colorValue !important;
+//   }
+// }
+
+// /// .flex-center | .flex-center-column | .flex-sm-and-down-center | .flex-sm-and-down-center-column
+// @each $flex_key, $flex_value in $flex-properties {
+//   .flex {
+//     &-#{$flex_key} {
+//       &,
+//       &-column {
+//         display: flex;
+//         align-items: center;
+//         flex-wrap: wrap;
+//         justify-content: $flex_value;
+//       }
+//       &-column {
+//         flex-direction: column;
+//       }
+//     }
+
+//     @each $media_key, $media_value in $display-breakpoints {
+//       // .flex-sm-and-up-center{display:flex,align-ite}
+
+//       // .flex-sm-and-up-center
+//       @include media($media_key) {
+//         &-#{$media_key}-#{$flex_key} {
+//           &,
+//           &-column {
+//             display: flex !important;
+//             align-items: center;
+//             flex-wrap: wrap;
+//           }
+//           &-column {
+//             flex-direction: column;
+//           }
+//           flex-direction: row;
+//           justify-content: $flex_value;
+//         }
+//       }
+//     }
+//   }
+// }

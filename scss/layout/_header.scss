@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+  nav.navbar {
+    padding: 1rem 0;
+    a.nav-link {
+      color: $secondary-color;
+      $header-padding: 1rem; // 16px * 2
+      position: relative;
+      &::before{
+        transition: map-get($map: $animations, $key: "fast");
+        transition-delay: 0.1s;
+        position: absolute;
+        content: "";
+        height: 1px;
+        background: $primary-color;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(1rem) scale(0);
+      }
+      &.active::before {
+        transform: translateY(1rem) scale(1);
+      }
+      color: $secondary-color;
+      font-weight: 600;
+      padding: 0.5rem 0.9rem !important;
+      font-size: 14px;
+    }
+
+    // .navbar-toggler {
+    //   &:focus {
+    //     box-shadow: 0 0 0 0.125rem;
+    //   }
+    // }
+    .brand {
+      font-weight: 800;
+      letter-spacing: 3px;
+    }
+  }
+}

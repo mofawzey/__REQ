@@ -1,0 +1,23 @@
+// SECTION_PADDING
+section {
+  padding: const("SECTION_PY");
+  min-height: 100vh;
+}
+
+// GLOBAL_COMPONENT ex:.section-heading
+.section-heading {
+  font-weight: bolder;
+  text-transform: capitalize;
+  @extend .gradient-text;
+  margin-left: auto;
+  margin-right: auto;
+}
+// PROPERTIES
+img {
+  max-width: 100%;
+}
+
+.btn-xl {
+  min-height: 56px;
+  min-width: 220px;
+}

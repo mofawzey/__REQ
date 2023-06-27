@@ -1,0 +1,59 @@
+/// @type Colors ///
+/// Copy text color
+/// @type Color
+$primary-color: #ff3f4f !default;
+
+/// Main brand color
+/// @type Color
+$secondary-color: #0d1853 !default;
+
+/// @type Color
+$black-light: rgb(33, 37, 41) !default;
+
+/// @type Color
+$white-light: rgb(248, 249, 250) !default;
+
+/// @type Color
+$brand-color: rgb(33, 37, 41) !default;
+
+/// @type Color
+$text-color: rgb(33, 37, 41) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+/// BG_LIGHT
+/// @type Color
+$bg-light: rgb(244, 244, 244) !default;
+// :root {
+//   --bs-primary: $primary-color;
+//   --bs-btn-bg: $primary-color;
+//   --bs-secondary: $secondary-color;
+//   --bs-primary-rgb: 26, 188, 156;
+//   --bs-secondary-rgb: 44, 62, 80;
+//   --bs-modal-width: 900px;
+// }
+$colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  white-light: $white-light,
+  black-light: $black-light,
+  bg-light: $bg-light,
+);
+
+/// BOOTSTRAP_COLORS
+// $blue: $secondary-color;
+$blue: $primary-color;
+// $primary: $primary-color;
+$secondary: $secondary-color;
+// $secondary: grey;
+// $blue: green;

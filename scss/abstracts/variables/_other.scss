@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Global_Variables
+$font-family: ("Open Sans", "Montserrat", "Plus Jakarta Sans");
+$CONSTANTS: (
+  "SECTION_PY": 3rem 0,
+  "BODY_FONT_FAMILY": "Open Sans",
+  "CONTAINER_MAX_WIDTH": 1180px,
+  "TS_DURATION": 0.3s,
+) !default;
+
+/// @type FontFamily ///
+/// Regular font family
+/// @type List
+$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace !default;
+
+/// Flex_Properties
+$flex-properties: (
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+  "evenly": space-evenly,
+  "start": flex-start,
+  "end": flex-end,
+);
+
+/// ANIMATIONS
+$animations: (
+  "primary": all 0.5s cubic-bezier(0.7, 0, 0.3, 1),
+  "fast": all 0.3s cubic-bezier(0.7, 0, 0.3, 1),
+  "smooth": all 0.7s cubic-bezier(0.7, 0, 0.3, 1),
+  "slow": all 0.9s cubic-bezier(0.7, 0, 0.3, 1),
+);
+
+// a_underline-link
+$link-decoration: none;

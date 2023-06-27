@@ -1,0 +1,35 @@
+// MY_media
+$mobile: "(max-width:599.99px)";
+$tablet: "(min-width:600px) and (max-width:959.99px)";
+$desktop: "(min-width:960px) and (max-width:1239.99px)";
+$large: "(min-width:1240px) and (max-width:1903.99px)";
+$x-large: "(min-width:1904px)";
+// bootstrap-breakpoints
+$v-grid-breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+/// @type MediaBreakpoints ///
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$display-breakpoints: (
+  "xs-only":
+    'only screen and (min-width:#{map-get($v-grid-breakpoints,"xs")}) and (max-width:#{map-get($v-grid-breakpoints,"sm")-0.02})',
+  "sm-only":
+    'only screen and (min-width:#{map-get($v-grid-breakpoints,"sm")}) and (max-width:#{map-get($v-grid-breakpoints,"md") - 0.02})',
+  "sm-and-down": 'only screen and (max-width:#{map-get($v-grid-breakpoints,"md") - 0.02})',
+  "sm-and-up": 'only screen and (min-width:#{map-get($v-grid-breakpoints,"sm")})',
+  "md-only":
+    'only screen and (min-width:#{map-get($v-grid-breakpoints,"md")}) and (max-width:#{map-get($v-grid-breakpoints,"lg") - 0.02})',
+  "md-and-down": 'only screen and (max-width:#{map-get($v-grid-breakpoints,"lg") - 0.02})',
+  "md-and-up": 'only screen and (min-width:#{map-get($v-grid-breakpoints,"md")})',
+  "lg-only":
+    'only screen and (min-width:#{map-get($v-grid-breakpoints,"lg")}) and (max-width:#{map-get($v-grid-breakpoints,"xl") - 0.02})',
+  "lg-and-down": 'only screen and (max-width:#{map-get($v-grid-breakpoints,"xl") - 0.02})',
+  "lg-and-up": 'only screen and (min-width:#{map-get($v-grid-breakpoints,"lg")})',
+  "xl-only": 'only screen and (min-width:#{map-get($v-grid-breakpoints,"xl")})',
+);
